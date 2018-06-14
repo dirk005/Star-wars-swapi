@@ -1,5 +1,12 @@
 .cardStyle{
 	background: rgba(0, 0, 0, 0.6);
-	min-width :300px;
-	color:#fff;
+	min-width :400px;	
+	color:#fff;	
+}
+.cardStyle:hover{
+	box-shadow: 0px 0px 15px yellow;
+    transition:  linear 0.5s;
+}
+.cardStyle:not(:hover){
+	 transition:  linear 0.5s;
 }

@@ -5,6 +5,8 @@ import SearchBox from '../components/searchBox.js';
 import Scroll from '../components/scroll';
 import CardList from '../components/CardList';
 
+
+
 class App extends Component {
   constructor(){
     super();
@@ -38,6 +40,7 @@ class App extends Component {
           .then(result => this.setState({characters2:result.results}))
           .catch((err) => console.log('error',err));
           url= 'https://swapi.co/api/people/?page=3';
+
       fetch(`${url}`)
          .then(resp => resp.json())   
           .then(result => this.setState({characters3:result.results}))
@@ -81,6 +84,8 @@ class App extends Component {
       
      
   }
+ 
+
   onSearchChange = (event) => {
     this.setState({searchField : event.target.value});
   }
@@ -93,9 +98,19 @@ class App extends Component {
     })
     
     return !characters.length ?
-       <h1>Loading ... </h1> : (
+      (
+          <div>
+            <div className="stars"></div>
+            <div className="twinkle"></div>
+            <div className="loader"></div>
+          </div>
+       )
+        : (
       <div className="App">
+      <div className="stars"></div>
+        <div className="twinkle"></div>
         <header className="App-header">
+        
           <img className="App-logo" src={Logo} alt='Star Wars Logo' />
           <SearchBox seachChange={this.onSearchChange}/>
         </header>
@@ -110,4 +125,4 @@ class App extends Component {
 
 export default App;
 
- // <CardList caracters={filterCharacters}/>
+ 

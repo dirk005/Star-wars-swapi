@@ -4,9 +4,10 @@
   "private": true,
   "homepage": "http://dirk005.github.io/Star-wars-swapi",
   "dependencies": {
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-particles-js": "^2.2.0",
     "react-scripts": "1.1.4",
     "tachyons": "^4.9.1"
   },
@@ -16,8 +17,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    
-    
+    "eject": "react-scripts eject"
   }
 }
