@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://dirk005.github.io/Star-wars-swapi",
   "dependencies": {
+    "ghpages": "0.0.10",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-particles-js": "^2.2.0",
