@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from '../img/Star-Wars-Logo.png';
-import SearchBox from '../components/searchBox.js';
-import Scroll from '../components/scroll';
-import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox/searchBox.js';
+import Scroll from '../components/Scroll/scroll';
+import CardList from '../components/CardList/CardList';
 
 
 
