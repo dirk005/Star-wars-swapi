@@ -21,6 +21,7 @@ const CardList = ({characters}) => {
 		 				birthYear={characters[i].birth_year}
 		 				gender={characters[i].gender}
 		 				homeWorld={characters[i].homeworld}
+		 				films={characters[i].films}
 					 />
 		 			);
 			})

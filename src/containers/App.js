@@ -5,6 +5,7 @@ import Logo from '../img/Star-Wars-Logo.png';
 import SearchBox from '../components/SearchBox/searchBox.js';
 import Scroll from '../components/Scroll/scroll';
 import CardList from '../components/CardList/CardList';
+import Footer from '../components/Footer/Footer'
 import { setSearchField, requestCharacters} from './ReduxContainers/actions'
 
 const mapStateToProps = state => {
@@ -51,7 +52,7 @@ class App extends Component {
 
   render() {
     const { searchField ,onSearchChange ,characters ,isPending} = this.props;
-    
+    console.log(characters)
       const filterCharacters = characters.filter(character =>{
        return character.name.toLowerCase().includes(searchField.toLowerCase());
     })   
@@ -75,8 +76,8 @@ class App extends Component {
         </header>
         <Scroll>
           <CardList characters={filterCharacters} />
-
         </Scroll>
+        <Footer/>
       </div>
     );
   }

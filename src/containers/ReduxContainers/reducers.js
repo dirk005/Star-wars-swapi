@@ -24,7 +24,7 @@ const initialStateCharacters = {
 	url: 'https://swapi.co/api/people/',
 	error:''
 }
-let pending = false;
+
 export const requestCharacters = ( state = initialStateCharacters ,action={}) =>{
 	//
 	console.log(action)
