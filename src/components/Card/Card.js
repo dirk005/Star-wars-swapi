@@ -11,7 +11,9 @@ class Card  extends React.Component{
 			
 		}
 	}
-	
+	 componentDidMount(){           
+         this.getHome(this.props.homeWorld);                         
+  }  
 	getHome = (homeWorld) =>{
 		fetch(homeWorld)
 		.then(resp => resp.json())
@@ -19,24 +21,10 @@ class Card  extends React.Component{
 		.catch(err => console.log(`Error getting home world ${err}`))
 	}
 
-	// getFilms = (films) => {
 	
-	// Promise.all(films.map(url =>{
-	// 	return fetch(url).then(resp => resp.json())
-	// }))
-	// .then(results => {
-	// 	return results.map(film => {
-	// 		this.setState({films: this.state.concat(film.title)})
-	// 	})
-	// }).catch(() => console.log('Error!'))
-
-	// }
 	
 render(){
-		const {id, name,height,mass,hairColor,skinColor,eyeColor,birthYear,gender,homeWorld,films,spiecies,vehecles,starships} =this.props;
-		this.getHome(homeWorld);
-		// this.getFilms(films);
-		//console.log(films)
+		const {id, name,height,mass,hairColor,skinColor,eyeColor,birthYear,gender} = this.props;
 		return (
 		<div className='cardStyle dib br3 pa3 ma2 grow bw2 shadow-5'>
 			<h1>{name}</h1>
@@ -49,8 +37,7 @@ render(){
 				<p>Eye Color : {eyeColor}</p>
 				<p>Birth Year : {birthYear}</p>
 				<p>Gender : {gender}</p>
-				<p>Home World : {this.state.homeWorld}</p>
-				
+				<p>Home World : {this.state.homeWorld}</p>				
 			</div>
 		</div>
 

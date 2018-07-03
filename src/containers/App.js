@@ -52,7 +52,6 @@ class App extends Component {
 
   render() {
     const { searchField ,onSearchChange ,characters ,isPending} = this.props;
-    console.log(characters)
       const filterCharacters = characters.filter(character =>{
        return character.name.toLowerCase().includes(searchField.toLowerCase());
     })   

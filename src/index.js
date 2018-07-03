@@ -6,7 +6,7 @@ import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import './index.css';
 import App from './containers/App';
-//import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
 import {searchCharacters, requestCharacters } from './containers/ReduxContainers/reducers'
 
@@ -19,4 +19,4 @@ ReactDOM.render(
 		<App />
 	</Provider>
 	, document.getElementById('root'));
-//registerServiceWorker();
+registerServiceWorker();
