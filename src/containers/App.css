@@ -35,12 +35,12 @@ h1{
 }
 
 .stars {
-  background:#000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  background:#000 url(../img/stars.png) repeat top center;
   z-index:-1;
 }
 
 .twinkle{
-  background:transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  background:transparent url(../img/twinkling.png) repeat top center;
   z-index:-1;
 
   -moz-animation:move-twink-back 100s linear infinite;

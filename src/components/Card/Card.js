@@ -24,7 +24,7 @@ class Card  extends React.Component{
 	
 	
 render(){
-		const {id, name,height,mass,hairColor,skinColor,eyeColor,birthYear,gender} = this.props;
+		const { name,height,mass,hairColor,skinColor,eyeColor,birthYear,gender} = this.props;
 		return (
 		<div className='cardStyle dib br3 pa3 ma2 grow bw2 shadow-5'>
 			<h1>{name}</h1>
